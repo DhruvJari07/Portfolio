@@ -30,6 +30,25 @@ Following are the steps by step detail of the each phase of the project.
 ## **Introduction:**
 
 * **Project background and context**
-Space X advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because Space X can reuse the first stage. Therefore, if we can determine if the first stage will land, we can determine the cost of a launch. This information can be used if an alternate company wants to bid against space X for a rocket launch. This goal of the project is to create a machine learning pipeline to predict if the first stage will land successfully.
+⋅⋅⋅Space X advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because Space X can reuse the first stage. Therefore, if we can determine if the first stage will land, we can determine the cost of a launch. This information can be used if an alternate company wants to bid against space X for a rocket launch. This goal of the project is to create a machine learning pipeline to predict if the first stage will land successfully.
+
+* **Problems we need to find answers for**
+⋅⋅⋅* What factors determine if the rocket will land successfully?
+⋅⋅⋅* The interaction amongst various features that determine the success rate of a successful landing.
+⋅⋅⋅*What operating conditions needs to be in place to ensure a successful landing program.
+
+## **Methodology:**
+
+### * **Data Collection
+
+The data was collected using various methods
+
+⋅⋅⋅* Data collection was done using get request to the SpaceX API.
+⋅⋅⋅* Next, we decoded the response content as a Json using .json() function call and turn it into a pandas dataframe using .json_normalize().
+⋅⋅⋅* We then cleaned the data, checked for missing values and fill in missing values where necessary.
+⋅⋅⋅* In addition, we performed web scraping from Wikipedia for Falcon 9 launch records with BeautifulSoup. 
+⋅⋅⋅* The objective was to extract the launch records as HTML table, parse the table and convert it to a pandas dataframe for future analysis.
+
+
 
 
