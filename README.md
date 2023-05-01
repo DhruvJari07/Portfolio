@@ -5,4 +5,4 @@ Data Science Portfolio Website
 
 This project focused on developing a recommendation system for movies using both content-based and collaborative-based approaches. The goal was to provide personalized movie recommendations to users based on their preferences and similarities with other users.
 
-[](https://github.com/DhruvJari07/Portfolio/blob/main/images/Netflix-Recommendation-Engine-Working-StartupTalky.jpg)
+![](/images/Netflix-Recommendation-Engine-Working-StartupTalky.jpg)
