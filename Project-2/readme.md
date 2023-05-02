@@ -87,7 +87,7 @@ The data was collected using various methods
 * Flight Number vs. Launch Site:
     * From the plot, we found that the larger the flight amount at a launch site, the greater the success rate at a launch site.
 
-   ![](/images/Result%20-%20Flight%20num%20vs%20Launch%20Site.png)
+   ![](../images/Result%20-%20Flight%20num%20vs%20Launch%20Site.png)
 
 * Success Rate vs. Orbit Type
     * From the plot, we can see that ES-L1, GEO, HEO, SSO, VLEO had the most success rate.
@@ -97,32 +97,32 @@ The data was collected using various methods
 * Payload vs. Orbit Type
     * We can observe that with heavy payloads, the successful landing are more for PO, LEO and ISS orbits.
     
-    ![](/images/Payload%20vs%20orbit%20type.png)
+    ![](../images/Payload%20vs%20orbit%20type.png)
 
 * Launch Success Yearly Trend
     * From the plot, we can observe that success rate since 2013 kept on increasing till 2020.
     
-    ![](https://github.com/DhruvJari07/Portfolio/blob/main/images/EDA-with-Data-Visualization-1.png)
+    ![](../images/EDA-with-Data-Visualization-1.png)
     
 * Markers showing launch sites with color labels
    
-   ![](/images/Launch%20Success%20vs%20failure.png)
+   ![](../images/Launch%20Success%20vs%20failure.png)
 
 * Launch Site distance to landmarks
 
-   ![](/images/launchsite%20distance.png)
+   ![](../images/launchsite%20distance.png)
 
 * Pie chart showing the success percentage achieved by each launch site
 
-   ![](/images/Success%20Percentage%20launch%20site%20pie%20chart.png)
+   ![](../images/Success%20Percentage%20launch%20site%20pie%20chart.png)
 
 * Pie chart showing the Launch site with the highest launch success ratio
 
-   ![](/images/Launch%20site%20success%20ratio.png)
+   ![](../images/Launch%20site%20success%20ratio.png)
 
 * Scatter plot of Payload vs Launch Outcome for all sites, with different payload selected in the range slider
 
-   ![](/images/scatter%20plot%20-%20payload%20vs%20launch%20outcome.png)
+   ![](../images/scatter%20plot%20-%20payload%20vs%20launch%20outcome.png)
 
 ## **Conclusion:**
 
