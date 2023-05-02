@@ -21,4 +21,4 @@ This project focused on developing a recommendation system for movies using both
 
 This project focused on predicting the successful landings of SpaceX Falcon 9 rockets using machine learning techniques. The goal was to develop a model that could accurately predict whether a Falcon 9 rocket launch would result in a successful landing.
 
-![](/images/spaceX%20website.jpg)
+![](https://github.com/DhruvJari07/Portfolio/blob/main/images/spaceX%20website.jpg)
