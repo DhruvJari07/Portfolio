@@ -87,34 +87,51 @@ The data was collected using various methods
 * Flight Number vs. Launch Site:
     * From the plot, we found that the larger the flight amount at a launch site, the greater the success rate at a launch site.
 
+   ![](/images/Result%20-%20Flight%20num%20vs%20Launch%20Site.png)
+
 * Success Rate vs. Orbit Type
     * From the plot, we can see that ES-L1, GEO, HEO, SSO, VLEO had the most success rate.
 
+   ![](/images/EDA%20with%20Data%20Visualization-2.png)
+
 * Payload vs. Orbit Type
     * We can observe that with heavy payloads, the successful landing are more for PO, LEO and ISS orbits.
+    
+    ![](
 
 * Launch Success Yearly Trend
     * From the plot, we can observe that success rate since 2013 kept on increasing till 2020.
     
+    ![](/images/EDA%20with%20Data%20Visualization-1.png)
+    
 * Markers showing launch sites with color labels
+   
+   ![](/images/Launch%20Success%20vs%20failure.png)
 
 * Launch Site distance to landmarks
 
+   ![](/images/launchsite%20distance.png)
+
 * Pie chart showing the success percentage achieved by each launch site
+
+   ![](/images/Success%20Percentage%20launch%20site%20pie%20chart.png)
 
 * Pie chart showing the Launch site with the highest launch success ratio
 
+   ![](/images/Launch%20site%20success%20ratio.png)
+
 * Scatter plot of Payload vs Launch Outcome for all sites, with different payload selected in the range slider
 
+   ![](/images/scatter%20plot%20-%20payload%20vs%20launch%20outcome.png)
 
 ## **Conclusion:**
 
 We can conclude that:
-    * The larger the flight amount at a launch site, the greater the success rate at a launch site.
-    * Launch success rate started to increase in 2013 till 2020.
-    * Orbits ES-L1, GEO, HEO, SSO, VLEO had the most success rate.
-    * KSC LC-39A had the most successful launches of any sites.
-    * The Decision tree classifier is the best machine learning algorithm for this task.
+  * The larger the flight amount at a launch site, the greater the success rate at a launch site.
+  * Launch success rate started to increase in 2013 till 2020.
+  * Orbits ES-L1, GEO, HEO, SSO, VLEO had the most success rate.
+  * KSC LC-39A had the most successful launches of any sites.
+  * The Decision tree classifier is the best machine learning algorithm for this task.
 
 
 
