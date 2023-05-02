@@ -97,7 +97,7 @@ The data was collected using various methods
 * Payload vs. Orbit Type
     * We can observe that with heavy payloads, the successful landing are more for PO, LEO and ISS orbits.
     
-    ![](
+    ![](/images/Payload%20vs%20orbit%20type.png)
 
 * Launch Success Yearly Trend
     * From the plot, we can observe that success rate since 2013 kept on increasing till 2020.
