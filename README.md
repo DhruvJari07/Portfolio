@@ -1,5 +1,5 @@
-# Dhruv Jariwala's Portfolio
-Data Science Portfolio
+# Portfolio Website
+Hey! This is Dhruv Jariwala. Welcome to my Datascience portfolio website.
 
 # [Project-1: Content based & collaborative movie recommendation system](https://dhruvjari07.github.io/Portfolio/Project-1/)
 
