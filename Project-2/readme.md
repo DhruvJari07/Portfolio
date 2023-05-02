@@ -102,7 +102,7 @@ The data was collected using various methods
 * Launch Success Yearly Trend
     * From the plot, we can observe that success rate since 2013 kept on increasing till 2020.
     
-    ![](/images/EDA%20with%20Data%20Visualization-1.png)
+    ![](images/EDA with Data Visualization-1.png)
     
 * Markers showing launch sites with color labels
    
