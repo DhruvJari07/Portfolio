@@ -51,36 +51,36 @@ The data was collected using various methods
 
 ### Data Wrangling
 
-    * We performed exploratory data analysis and determined the training labels.
-    * We calculated the number of launches at each site, and the number and occurrence of each orbits
-    * We created landing outcome label from outcome column and exported the results to csv.
+  * We performed exploratory data analysis and determined the training labels.
+  * We calculated the number of launches at each site, and the number and occurrence of each orbits
+  * We created landing outcome label from outcome column and exported the results to csv.
 
 ### EDA with Data Visualization
 
-    * We explored the data by visualizing the relationship between flight number and launch Site, payload and launch site, success rate of each orbit type, flight number and orbit type, the launch success yearly trend. 
+  * We explored the data by visualizing the relationship between flight number and launch Site, payload and launch site, success rate of each orbit type, flight number and orbit type, the launch success yearly trend. 
 
 ### EDA with SQL
 
-    * We loaded the SpaceX dataset into a PostgreSQL database without leaving the jupyter notebook.
-    * We applied EDA with SQL to get insight from the data. We wrote queries to find out for instance:
-        * The names of unique launch sites in the space mission.
-        * The total payload mass carried by boosters launched by NASA (CRS)
-        * The average payload mass carried by booster version F9 v1.1
-        * The total number of successful and failure mission outcomes
-        * The failed landing outcomes in drone ship, their booster version and launch site names.
+  * We loaded the SpaceX dataset into a PostgreSQL database without leaving the jupyter notebook.
+  * We applied EDA with SQL to get insight from the data. We wrote queries to find out for instance:
+      * The names of unique launch sites in the space mission.
+      * The total payload mass carried by boosters launched by NASA (CRS)
+      * The average payload mass carried by booster version F9 v1.1
+      * The total number of successful and failure mission outcomes
+      * The failed landing outcomes in drone ship, their booster version and launch site names.
        
 ### Build a Dashboard with Plotly Dash
 
-    * We built an interactive dashboard with Plotly dash
-    * We plotted pie charts showing the total launches by a certain sites
-    * We plotted scatter graph showing the relationship with Outcome and Payload Mass (Kg) for the different booster version.
+  * We built an interactive dashboard with Plotly dash
+  * We plotted pie charts showing the total launches by a certain sites
+  * We plotted scatter graph showing the relationship with Outcome and Payload Mass (Kg) for the different booster version.
 
 ### Predictive Analysis (Classification)
 
-    * We loaded the data using numpy and pandas, transformed the data, split our data into training and testing.
-    * We built different machine learning models and tune different hyperparameters using GridSearchCV.
-    * We used accuracy as the metric for our model, improved the model using feature engineering and algorithm tuning.
-    * We found the best performing classification model.
+  * We loaded the data using numpy and pandas, transformed the data, split our data into training and testing.
+  * We built different machine learning models and tune different hyperparameters using GridSearchCV.
+  * We used accuracy as the metric for our model, improved the model using feature engineering and algorithm tuning.
+  * We found the best performing classification model.
 
 ## **Result:**
 
