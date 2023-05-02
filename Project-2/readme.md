@@ -92,7 +92,7 @@ The data was collected using various methods
 * Success Rate vs. Orbit Type
     * From the plot, we can see that ES-L1, GEO, HEO, SSO, VLEO had the most success rate.
 
-   ![](/images/EDA-with-Data-Visualization-2.png)
+   ![](../images/EDA-with-Data-Visualization-2.png)
 
 * Payload vs. Orbit Type
     * We can observe that with heavy payloads, the successful landing are more for PO, LEO and ISS orbits.
@@ -102,7 +102,7 @@ The data was collected using various methods
 * Launch Success Yearly Trend
     * From the plot, we can observe that success rate since 2013 kept on increasing till 2020.
     
-    ![](/../main/images/EDA-with-Data-Visualization-1.png)
+    ![](https://github.com/DhruvJari07/Portfolio/blob/main/images/EDA-with-Data-Visualization-1.png)
     
 * Markers showing launch sites with color labels
    
