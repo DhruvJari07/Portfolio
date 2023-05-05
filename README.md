@@ -27,6 +27,5 @@ This project focused on predicting the successful landings of SpaceX Falcon 9 ro
 
 Exploring churn in SME customers of Utility Company, we investigated the impact of price sensitivity and developed a predictive model to identify customers at risk. Our findings revealed the need for feature engineering and model optimization to improve churn prediction accuracy and guide targeted discount incentives.
 
-![]()
-
+![](/images/churn_main_image.jpg)
 
