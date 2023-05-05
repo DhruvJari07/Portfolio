@@ -22,3 +22,11 @@ This project focused on developing a recommendation system for movies using both
 This project focused on predicting the successful landings of SpaceX Falcon 9 rockets using machine learning techniques. The goal was to develop a model that could accurately predict whether a Falcon 9 rocket launch would result in a successful landing.
 
 ![](/images/spaceX-website-home-page.jpg)
+
+# [Project-3: Understanding Churn in SME Customers of Utility Company: Exploring the Role of Price Sensitivity and Developing a Predictive Model for Discount Incentive](https://dhruvjari07.github.io/Portfolio/Project-3/)
+
+Exploring churn in SME customers of Utility Company, we investigated the impact of price sensitivity and developed a predictive model to identify customers at risk. Our findings revealed the need for feature engineering and model optimization to improve churn prediction accuracy and guide targeted discount incentives.
+
+![]()
+
+
