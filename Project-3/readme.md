@@ -114,26 +114,39 @@ Description of all the data is as follows:
 After conducting a thorough analysis of the data, following are some patterns that were identified.
 
   * **Overall Churn Percentage:** About 10% of the total customers have churned.
-  ![]()
+  ![](../images/1_churning_percentage.png)
   
   * **Churn Percentage per Sales Channel:** Interestingly, the churning customers are distributed over 5 different values for channel_sales. As well as this, the value of MISSING has a churn rate of 7.6%. MISSING indicates a missing value and was added by the team when they were cleaning the dataset. This feature could be an important feature when it comes to building our model.
-  ![]()
+  ![](../images/2_sales_channel_retention_churn.png)
   
   * **Consumption Data Histogram:** The following chart shows distribution of the consumption in the last year and month. Clearly, the consumption data is highly positively skewed, presenting a very long right-tail towards the higher values of the distribution. The values on the higher and lower end of the distribution are likely to be outliers. 
+  ![](../images/3_skewed_data.png)
   
   * **Consumption Data Box Plot:** We can use a sbox plot to visualise the outliers in more detail. It can also tell us if our data is symmetrical, how tightly our data is grouped and if/how our data is skewed.
+  ![](../images/4_skewed_data_2.png)
   
   * **Forecasted Data:** Similarly to the consumption plots, we can observe that a lot of the variables are highly positively skewed, creating a very long tail for the higher values. We will have to make some transformations during the feature engineering to correct for this skewness.
+  ![](../images/5_forecast_analysis.png)
   
  Following are some more visualization to help us understand the data.
  * **Churn Percentage for Contract Type:**  
+ ![](../images/6_has_gas.png)
+ 
+ * **Subscribed Power:**
+ ![](../images/7_subscribed_power.png)
+ 
  * **Number of Products:**
+ ![](../images/8_no_of_products.png)
+ 
  * **Active Years:** 
+ ![](../images/9_active_num_of_years.png)
+ 
  * **Origin Contract:**
+ ![](../images/10_origin_contract.png)
  
 Now in order to test our hypothesis that price sensitivy has a major influence on churn, we can create a correlation plot to identify how closely churn is related to price data.
 
-![]()
+![](../images/11_correlation.png)
 
 From the correlation plot, it shows a higher magnitude of correlation between other price sensitivity variables, however overall the correlation with churn is very low. This indicates that there is a weak linear relationship between price sensitity and churn. This suggests that for price sensivity to be a major driver for predicting churn, we may need to engineer the feature differently.
  
