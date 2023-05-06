@@ -152,6 +152,28 @@ From the correlation plot, it shows a higher magnitude of correlation between ot
  
   
   
+## 3. Feature Engineering:
 
+We now has a good understanding of the data and we can use the data to further understand the business problem. We need to brainstorm and build out features to uncover signals in the data that could inform the churn model.
 
+Some features that were built are as follows.
 
+* **Difference between off-peak prices in December and preceding January: **
+    This feature is calculated as it may reveal macro patterns that occur over an entire year.
+    
+* **Average price changes across periods: **
+     This feature is calculated as it may reveal patterns on a micro scale between months.
+
+* **Max price changes across periods and months: **
+    I thought that calculating the maximum price change between months and time periods would be a good feature to create because I was trying to think from the perspective of a client. As a Utilities customer, there is nothing more annoying than sudden price changes between months, and a large increase in prices within a short time span would be an influencing factor in causing me to look at other utilities providers for a better deal. Since we are trying to predict churn for this use case, I thought this would be an interesting feature to include.
+    
+ * **Tenure: **
+    How long a company has been a client of the Utility Company.
+    
+    ![]()
+    
+    We can see that companies who have only been a client for 4 or less months are much more likely to churn compared to companies that have been a client for longer. Interestingly, the difference between 4 and 5 months is about 4%, which represents a large jump in likelihood for a customer to churn compared to the other differences between ordered tenure values. Perhaps this reveals that getting a customer to over 4 months tenure is actually a large milestone with respect to keeping them as a long term customer.
+
+This is an interesting feature to keep for modelling because clearly how long you've been a client, has a influence on the chance of a client churning.
+
+ * **
