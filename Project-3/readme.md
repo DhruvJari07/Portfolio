@@ -240,3 +240,60 @@ Some features that were built are as follows.
        
         ![](../images/012_corr.png)
 
+## 4. Model Development: 
+
+We will use 'Random Forest classifier' to train our data. 
+
+Some advantages of the random forest classifier include:
+
+* The random forest uses a rule-based approach instead of a distance calculation and so features do not need to be scaled.
+* It is able to handle non-linear parameters better than linear based models.
+
+On the flip side, some disadvantages of the random forest classifier include:
+
+* The computational power needed to train a random forest on a large dataset is high, since we need to build a whole ensemble of estimators.
+* Training time can be longer due to the increased complexity and size of tree ensemble.
+
+## 5. Model Evaluation:
+
+Let's evaluate how well this trained model is able to predict the values of the test dataset.
+
+We are going to use 3 metrics to evaluate performance:
+  * Accuracy = the ratio of correctly predicted observations to the total observations
+  * Precision = the ability of the classifier to not label a negative sample as positive
+  * Recall = the ability of the classifier to find all the positive samples
+
+  ![]()
+  
+  Following are some interpretation from the results.
+  
+  * Within the test set about 10% of the rows are churners (churn = 1).
+  * Looking at the true negatives, we have 3277 out of 3279. This means that out of all the negative cases (churn = 0), we predicted 3277 as negative. This is great!
+  * Looking at the false negatives, this is where we have predicted a client to not churn (churn = 0) when in fact they did churn (churn = 1). This number is quite high at 352, we want to get the false negatives to as close to 0 as we can, so this would need to be addressed when improving the model.
+  * Looking at false positives, this is where we have predicted a client to churn when they actually didnt churn. For this value we can see there are 2 cases, which is great!
+  * With the true positives, we can see that in total we have 366 clients that churned in the test dataset. However, we are only able to correctly identify 21 of those 366, which is very poor.
+  * Looking at the accuracy score, this is very misleading! Hence the use of precision and recall is important. The accuracy score is high, but it does not tell us the whole story.
+  * Looking at the precision score, this shows us a score of 0.91 which is not bad, but could be improved.
+  * However, the recall shows us that the classifier has a very poor ability to identify positive samples. This would be the main concern for improving this model!
+
+  So overall, we're able to very accurately identify clients that do not churn, but we are not able to predict cases where clients do churn! What we are seeing is that a high % of clients are being identified as not churning when they should be identified as churning. This in turn tells me that the current set of features are not discriminative enough to clearly distinguish between churners and non-churners.
+
+  we need go back and investigate feature engineering to try and create more predictive features. We may also experiment with optimising the parameters within the model to improve performance. 
+  
+  In the Random Forest classifier, we're able to extract feature importances using the built-in method on the trained model. Let's investigate the feature importance.
+  
+  ![]()
+  
+  From this chart, we can observe the following points:
+
+    * Net margin and consumption over 12 months is a top driver for churn in this model.
+    * Margin on power subscription also is an influential driver.
+    * Time seems to be an influential factor, especially the number of months they have been active, their tenure and the number of months since they updated their contract
+    * Our price sensitivity features are scattered around but are not the main driver for a customer churning
+
+  The last observation is important because this relates back to our original hypothesis:
+
+  > Is churn driven by the customers' price sensitivity?
+
+  Based on the output of the feature importances, it is not a main driver but it is a weak contributor. However, to arrive at a conclusive result, more experimentation is needed.
+
