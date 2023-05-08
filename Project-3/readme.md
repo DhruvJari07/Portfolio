@@ -174,7 +174,7 @@ Some features that were built are as follows.
     
     We can see that companies who have only been a client for 4 or less years are much more likely to churn compared to companies that have been a client for longer. Interestingly, the difference between 4 and 5 years is about 4%, which represents a large jump in likelihood for a customer to churn compared to the other differences between ordered tenure values. Perhaps this reveals that getting a customer to over 4 years tenure is actually a large milestone with respect to keeping them as a long term customer.
 
-This is an interesting feature to keep for modelling because clearly how long you've been a client, has a influence on the chance of a client churning.
+    This is an interesting feature to keep for modelling because clearly how long you've been a client, has a influence on the chance of a client churning.
 
  * **Transforming dates into months:**
       * months_activ = Number of months active until reference date (Jan 2016)
@@ -184,16 +184,46 @@ This is an interesting feature to keep for modelling because clearly how long yo
 
     ![]()
     
-    Dates as a datetime object are not useful for a predictive model, so we needed to use the datetimes to create some other features that may hold some predictive power.
+    Dates as a datetime object are not useful for a predictive model, so we needed to use the datetimes to create some other features that may hold some    predictive power.
 
-Using intuition, you could assume that a client who has been an active client of the utility company for a longer amount of time may have more loyalty to the brand and is more likely to stay. Whereas a newer client may be more volatile. Hence the addition of the months_activ feature.
+    Using intuition, you could assume that a client who has been an active client of the utility company for a longer amount of time may have more loyalty to the brand and is more likely to stay. Whereas a newer client may be more volatile. Hence the addition of the months_activ feature.
 
-As well as this, if we think from the perspective of a client with the company, if you're coming toward the end of your contract with the company your thoughts could go a few ways. You could be looking for better deals for when your contract ends, or you might want to see out your contract and sign another one. One the other hand if you've only just joined, you may have a period where you're allowed to leave if you're not satisfied. Furthermore, if you're in the middle of your contract, their may be charges if you wanted to leave, deterring clients from churning mid-way through their agreement. So, I think months_to_end will be an interesting feature because it may reveal patterns and behaviours about timing of churn.
+    As well as this, if we think from the perspective of a client with the company, if you're coming toward the end of your contract with the company your thoughts could go a few ways. You could be looking for better deals for when your contract ends, or you might want to see out your contract and sign another one. One the other hand if you've only just joined, you may have a period where you're allowed to leave if you're not satisfied. Furthermore, if you're in the middle of your contract, their may be charges if you wanted to leave, deterring clients from churning mid-way through their agreement. So, I think months_to_end will be an interesting feature because it may reveal patterns and behaviours about timing of churn.
 
-My belief is that if a client has made recent updates to their contract, they are more likely to be satisfied or at least they have received a level of customer service to update or change their existing services. I believe this to be a positive sign, they are an engaged customer, and so I believe months_modif_prod will be an interesting feature to include because it shows the degree of how 'engaged' a client is with the company.
+    My belief is that if a client has made recent updates to their contract, they are more likely to be satisfied or at least they have received a level of customer service to update or change their existing services. I believe this to be a positive sign, they are an engaged customer, and so I believe months_modif_prod will be an interesting feature to include because it shows the degree of how 'engaged' a client is with the company.
 
-Finally the number of months since a client last renewed a contract I believe will be an interesting feature because once again, it shows the degree to which that client is engaged. It also goes a step further than just engagement, it shows a level of commitment if a client renews their contract. For this reason, I believe months_renewal will be a good feature to include.
+    Finally the number of months since a client last renewed a contract I believe will be an interesting feature because once again, it shows the degree to which that client is engaged. It also goes a step further than just engagement, it shows a level of commitment if a client renews their contract. For this reason, I believe months_renewal will be a good feature to include.
     
+  * **Transforming Boolean data:**
+      * has_gas: We simply want to transform this column from being categorical to being a binary flag. If a customer also buys gas from the company, it shows that they have multiple products and are a loyal customer to the brand. Hence, it is no surprise that customers who do not buy gas are almost 2% more likely to churn than customers who also buy gas from the company. Hence, this could be a useful feature.
+
+  * **Transforming categorical data:**
+      * channel_sales: We have 8 categories, so we will create 8 dummy variables from this column. However, as we can see the last 3 categories in the output above, show that they only have 11, 3 and 2 occurrences respectively. Considering that our dataset has about 14000 rows, this means that these dummy variables will be almost entirely 0 and so will not add much predictive power to the model at all. For this reason, we will drop these 3 dummy variables. 
   
-  
+      * origin_up: Similar to channel_sales the last 3 categories in the output above show very low frequency, so we will remove these from the features after creating dummy variables.
+
+
+  * **Transforming numerical data:**
+      In the EDA, we saw that some variables were highly skewed. We need to treat this skewness because some predictive models have inherent assumptions about the distribution of the features that are being supplied to it i.e. parametric models.
+
+      we will use the 'Logarithm' transformation for the positively skewed features. We will add a constant of 1 to all the values as we can not apply log to values 0.
+
+      Following are the statistics of the skewed features. We will compare them after the transformation.
+
+      ![]()
+      
+      We can see that the standard deviation for most of these features is quite high.
+      
+      ![]()
+      
+      Now we can see that for the majority of the features, their standard deviation is much lower after transformation.
+      
+      below is the the distributions of some of these features
+      
+      ![]()
+      
+   * **Correlation:**
+       Following correlation plot shows the correlations between all the features of our data.
+       
+       ![]()
 
