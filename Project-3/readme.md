@@ -263,7 +263,7 @@ We are going to use 3 metrics to evaluate performance:
   * Precision = the ability of the classifier to not label a negative sample as positive
   * Recall = the ability of the classifier to find all the positive samples
 
-  ![]()
+  ![](../images/001_model_evaluation.png)
   
   Following are some interpretation from the results.
   
@@ -282,7 +282,7 @@ We are going to use 3 metrics to evaluate performance:
   
   In the Random Forest classifier, we're able to extract feature importances using the built-in method on the trained model. Let's investigate the feature importance.
   
-  ![]()
+  ![](../images/002_feature_imp.png)
   
   From this chart, we can observe the following points:
 
