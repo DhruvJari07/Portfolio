@@ -158,22 +158,42 @@ We now has a good understanding of the data and we can use the data to further u
 
 Some features that were built are as follows.
 
-* **Difference between off-peak prices in December and preceding January: **
+* **Difference between off-peak prices in December and preceding January:**
     This feature is calculated as it may reveal macro patterns that occur over an entire year.
     
-* **Average price changes across periods: **
+* **Average price changes across periods:**
      This feature is calculated as it may reveal patterns on a micro scale between months.
 
-* **Max price changes across periods and months: **
+* **Max price changes across periods and months:**
     I thought that calculating the maximum price change between months and time periods would be a good feature to create because I was trying to think from the perspective of a client. As a Utilities customer, there is nothing more annoying than sudden price changes between months, and a large increase in prices within a short time span would be an influencing factor in causing me to look at other utilities providers for a better deal. Since we are trying to predict churn for this use case, I thought this would be an interesting feature to include.
     
- * **Tenure: **
+ * **Tenure:**
     How long a company has been a client of the Utility Company.
     
     ![]()
     
-    We can see that companies who have only been a client for 4 or less months are much more likely to churn compared to companies that have been a client for longer. Interestingly, the difference between 4 and 5 months is about 4%, which represents a large jump in likelihood for a customer to churn compared to the other differences between ordered tenure values. Perhaps this reveals that getting a customer to over 4 months tenure is actually a large milestone with respect to keeping them as a long term customer.
+    We can see that companies who have only been a client for 4 or less years are much more likely to churn compared to companies that have been a client for longer. Interestingly, the difference between 4 and 5 years is about 4%, which represents a large jump in likelihood for a customer to churn compared to the other differences between ordered tenure values. Perhaps this reveals that getting a customer to over 4 years tenure is actually a large milestone with respect to keeping them as a long term customer.
 
 This is an interesting feature to keep for modelling because clearly how long you've been a client, has a influence on the chance of a client churning.
 
- * **
+ * **Transforming dates into months:**
+      * months_activ = Number of months active until reference date (Jan 2016)
+      * months_to_end = Number of months of the contract left until reference date (Jan 2016)
+      * months_modif_prod = Number of months since last modification until reference date (Jan 2016)
+      * months_renewal = Number of months since last renewal until reference date (Jan 2016)
+
+    ![]()
+    
+    Dates as a datetime object are not useful for a predictive model, so we needed to use the datetimes to create some other features that may hold some predictive power.
+
+Using intuition, you could assume that a client who has been an active client of the utility company for a longer amount of time may have more loyalty to the brand and is more likely to stay. Whereas a newer client may be more volatile. Hence the addition of the months_activ feature.
+
+As well as this, if we think from the perspective of a client with the company, if you're coming toward the end of your contract with the company your thoughts could go a few ways. You could be looking for better deals for when your contract ends, or you might want to see out your contract and sign another one. One the other hand if you've only just joined, you may have a period where you're allowed to leave if you're not satisfied. Furthermore, if you're in the middle of your contract, their may be charges if you wanted to leave, deterring clients from churning mid-way through their agreement. So, I think months_to_end will be an interesting feature because it may reveal patterns and behaviours about timing of churn.
+
+My belief is that if a client has made recent updates to their contract, they are more likely to be satisfied or at least they have received a level of customer service to update or change their existing services. I believe this to be a positive sign, they are an engaged customer, and so I believe months_modif_prod will be an interesting feature to include because it shows the degree of how 'engaged' a client is with the company.
+
+Finally the number of months since a client last renewed a contract I believe will be an interesting feature because once again, it shows the degree to which that client is engaged. It also goes a step further than just engagement, it shows a level of commitment if a client renews their contract. For this reason, I believe months_renewal will be a good feature to include.
+    
+  
+  
+
