@@ -276,7 +276,9 @@ We are going to use 3 metrics to evaluate performance:
   * Looking at the precision score, this shows us a score of 0.91 which is not bad, but could be improved.
   * However, the recall shows us that the classifier has a very poor ability to identify positive samples. This would be the main concern for improving this model!
 
-  So overall, we're able to very accurately identify clients that do not churn, but we are not able to predict cases where clients do churn! What we are seeing is that a high % of clients are being identified as not churning when they should be identified as churning. This in turn tells me that the current set of features are not discriminative enough to clearly distinguish between churners and non-churners.
+## 6. Interpretation and Recommendations:
+
+  Overall, we're able to very accurately identify clients that do not churn, but we are not able to predict cases where clients do churn! What we are seeing is that a high % of clients are being identified as not churning when they should be identified as churning. This in turn tells me that the current set of features are not discriminative enough to clearly distinguish between churners and non-churners.
 
   we need go back and investigate feature engineering to try and create more predictive features. We may also experiment with optimising the parameters within the model to improve performance. 
   
