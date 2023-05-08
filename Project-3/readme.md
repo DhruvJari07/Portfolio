@@ -161,16 +161,23 @@ Some features that were built are as follows.
 * **Difference between off-peak prices in December and preceding January:**
     This feature is calculated as it may reveal macro patterns that occur over an entire year.
     
+    ![](../images/01_Feature_diff_jan_dec.png)
+    
 * **Average price changes across periods:**
      This feature is calculated as it may reveal patterns on a micro scale between months.
+     
+     ![](../images/02_Average_price_changes_across_periods.png)
 
 * **Max price changes across periods and months:**
     I thought that calculating the maximum price change between months and time periods would be a good feature to create because I was trying to think from the perspective of a client. As a Utilities customer, there is nothing more annoying than sudden price changes between months, and a large increase in prices within a short time span would be an influencing factor in causing me to look at other utilities providers for a better deal. Since we are trying to predict churn for this use case, I thought this would be an interesting feature to include.
     
+    ![](../images/03_max_price_code.png)
+    ![](../images/03_max_price_output.png)
+    
  * **Tenure:**
     How long a company has been a client of the Utility Company.
     
-    ![]()
+    ![](../images/04_tenure.png)
     
     We can see that companies who have only been a client for 4 or less years are much more likely to churn compared to companies that have been a client for longer. Interestingly, the difference between 4 and 5 years is about 4%, which represents a large jump in likelihood for a customer to churn compared to the other differences between ordered tenure values. Perhaps this reveals that getting a customer to over 4 years tenure is actually a large milestone with respect to keeping them as a long term customer.
 
@@ -182,7 +189,7 @@ Some features that were built are as follows.
       * months_modif_prod = Number of months since last modification until reference date (Jan 2016)
       * months_renewal = Number of months since last renewal until reference date (Jan 2016)
 
-    ![]()
+    ![](../images/05_dates_to_months.png)
     
     Dates as a datetime object are not useful for a predictive model, so we needed to use the datetimes to create some other features that may hold some    predictive power.
 
@@ -196,11 +203,17 @@ Some features that were built are as follows.
     
   * **Transforming Boolean data:**
       * has_gas: We simply want to transform this column from being categorical to being a binary flag. If a customer also buys gas from the company, it shows that they have multiple products and are a loyal customer to the brand. Hence, it is no surprise that customers who do not buy gas are almost 2% more likely to churn than customers who also buy gas from the company. Hence, this could be a useful feature.
+      
+      ![](../images/06_has_gas_binary_data.png)
 
   * **Transforming categorical data:**
       * channel_sales: We have 8 categories, so we will create 8 dummy variables from this column. However, as we can see the last 3 categories in the output above, show that they only have 11, 3 and 2 occurrences respectively. Considering that our dataset has about 14000 rows, this means that these dummy variables will be almost entirely 0 and so will not add much predictive power to the model at all. For this reason, we will drop these 3 dummy variables. 
   
+      ![](../images/07_sales_channel.png)
+      
       * origin_up: Similar to channel_sales the last 3 categories in the output above show very low frequency, so we will remove these from the features after creating dummy variables.
+      
+      ![](../images/08_origin_up.png)
 
 
   * **Transforming numerical data:**
@@ -210,20 +223,20 @@ Some features that were built are as follows.
 
       Following are the statistics of the skewed features. We will compare them after the transformation.
 
-      ![]()
+      ![](../images/09_skewed_data.png)
       
       We can see that the standard deviation for most of these features is quite high.
       
-      ![]()
+      ![](../images/010_transformed_data.png)
       
       Now we can see that for the majority of the features, their standard deviation is much lower after transformation.
       
       below is the the distributions of some of these features
       
-      ![]()
+      ![](../images/011_transformed_visulization.png)
       
    * **Correlation:**
        Following correlation plot shows the correlations between all the features of our data.
        
-       ![]()
+        ![](../images/012_corr.png)
 
