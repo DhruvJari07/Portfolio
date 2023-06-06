@@ -11,6 +11,11 @@ I invite you to explore my portfolio and delve into the details of each project.
 
 Thank you for visiting my project portfolio website. I am excited to share my journey and expertise with you, and I look forward to connecting with like-minded professionals and potential collaborators. Together, let's harness the power of data to drive innovation and create a better future.
 
+# [Project-1: Understanding Churn in SME Customers of Utility Company: Exploring the Role of Price Sensitivity and Developing a Predictive Model for Discount Incentive](https://dhruvjari07.github.io/Portfolio/Project-1/)
+
+Exploring churn in SME customers of Utility Company, we investigated the impact of price sensitivity and developed a predictive model to identify customers at risk. Our findings revealed the need for feature engineering and model optimization to improve churn prediction accuracy and guide targeted discount incentives.
+
+![](/images/churn_main_image.jpg)
 
 # [Project-2: Predicting Successful Landings of SpaceX Falcon 9 Rocket](https://dhruvjari07.github.io/Portfolio/Project-2/)
 
@@ -18,11 +23,6 @@ This project focused on predicting the successful landings of SpaceX Falcon 9 ro
 
 ![](/images/spaceX-website-home-page.jpg)
 
-# [Project-3: Understanding Churn in SME Customers of Utility Company: Exploring the Role of Price Sensitivity and Developing a Predictive Model for Discount Incentive](https://dhruvjari07.github.io/Portfolio/Project-3/)
-
-Exploring churn in SME customers of Utility Company, we investigated the impact of price sensitivity and developed a predictive model to identify customers at risk. Our findings revealed the need for feature engineering and model optimization to improve churn prediction accuracy and guide targeted discount incentives.
-
-![](/images/churn_main_image.jpg)
 
 # [Project-4: Content based & collaborative movie recommendation system](https://dhruvjari07.github.io/Portfolio/Project-4/)
 
