@@ -11,11 +11,6 @@ I invite you to explore my portfolio and delve into the details of each project.
 
 Thank you for visiting my project portfolio website. I am excited to share my journey and expertise with you, and I look forward to connecting with like-minded professionals and potential collaborators. Together, let's harness the power of data to drive innovation and create a better future.
 
-# [Project-1: Content based & collaborative movie recommendation system](https://dhruvjari07.github.io/Portfolio/Project-1/)
-
-This project focused on developing a recommendation system for movies using both content-based and collaborative-based approaches. The goal was to provide personalized movie recommendations to users based on their preferences and similarities with other users.
-
-![](/images/Netflix-Recommendation-Engine-Working-StartupTalky.jpg)
 
 # [Project-2: Predicting Successful Landings of SpaceX Falcon 9 Rocket](https://dhruvjari07.github.io/Portfolio/Project-2/)
 
@@ -29,3 +24,8 @@ Exploring churn in SME customers of Utility Company, we investigated the impact 
 
 ![](/images/churn_main_image.jpg)
 
+# [Project-4: Content based & collaborative movie recommendation system](https://dhruvjari07.github.io/Portfolio/Project-4/)
+
+This project focused on developing a recommendation system for movies using both content-based and collaborative-based approaches. The goal was to provide personalized movie recommendations to users based on their preferences and similarities with other users.
+
+![](/images/Netflix-Recommendation-Engine-Working-StartupTalky.jpg)
